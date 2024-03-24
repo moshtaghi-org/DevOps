@@ -27,6 +27,14 @@ ssh-keygen
 cd /home/ansible
 ssh-copy-id ansible@node1
 
+nano /tmp/hosts
+  node1
+  node2
+cat /tmp/hosts | while read line; do ssh-copy-id ansible@$line; done
+
+ansible all --list
+ansible nodes -m ping
+
 --centos:
 sudo yum install epel-release
 sudo yum update
