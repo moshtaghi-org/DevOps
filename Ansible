@@ -1,12 +1,15 @@
-1  sudo apt update
-2  sudo apt upgrade
-3  sudo useradd ansible
-4  sudo passwd ansible
-5  sudo nano /etc/ssh/sshd_config
-6  sudo systemctl restart sshd
-7  sudo visudo
-8  sudo apt install ansible
-9  ansible --version
+sudo apt update
+sudo apt upgrade
+sudo useradd ansible
+sudo passwd ansible
+sudo nano /etc/ssh/sshd_config
+  PasswordAuthentication  yes
+
+sudo systemctl restart sshd
+sudo visudo
+  ansible  ALL=(ALL)  NOPASSWD: ALL
+sudo apt install ansible
+ansible --version
 
 --centos:
 sudo yum install epel-release
