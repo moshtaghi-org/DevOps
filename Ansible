@@ -1,0 +1,18 @@
+1  sudo apt update
+2  sudo apt upgrade
+3  sudo useradd ansible
+4  sudo passwd ansible
+5  sudo nano /etc/ssh/sshd_config
+6  sudo systemctl restart sshd
+7  sudo visudo
+8  sudo apt install ansible
+9  ansible --version
+
+--centos:
+sudo yum install epel-release
+sudo yum update
+sudo yum install ansible
+
+https://centos.pkgs.org/7/centos-extras-x86_64/sshpass-1.06-2.el7.x86_64.rpm.html
+wget http://mirror.centos.org/centos/7/extras/x86_64/Packages/sshpass-1.06-2.el7.x86_64.rpm
+sudo yum localinstall sshpass-1.06-2.el7.x86_64.rpm
