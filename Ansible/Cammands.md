@@ -1,5 +1,5 @@
 $ ansible all -a "hostname"
-//add the argument -f 1 to tell Ansible to use only one fork:
+*//add the argument **-f 1** to tell Ansible to use only one fork:
 $ ansible all -a "hostname" -f 1
 $ ansible all -a "df -h"
 $ ansible all -a "free -m"
