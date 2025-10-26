@@ -1,5 +1,20 @@
-تغییر مسیر کش APT:
+
+install ansible:
+<a href="https://github.com/moshtaghi-org/DevOps/blob/main/Ansible/Setup.md">Link</a>
 ```
-mkdir -p /tmp/apt-cache
-echo 'Dir::Cache::archives "/tmp/apt-cache";' > /etc/apt/apt.conf.d/99customcache
-apt-get update && apt-get install -y nano && apt-get clean
+https://github.com/moshtaghi-org/DevOps/blob/main/Ansible/Setup.md
+```
+-------
+
+install Node.js
+via nvm:
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+```
+```
+nvm install 22
+nvm -v
+nvm list
+node -v
+npm -v
+```
