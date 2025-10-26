@@ -15,10 +15,11 @@ ansible --version
 sudo yum install epel-release
 sudo yum update
 sudo yum install ansible
-
+```
 https://centos.pkgs.org/7/centos-extras-x86_64/sshpass-1.06-2.el7.x86_64.rpm.html
 wget http://mirror.centos.org/centos/7/extras/x86_64/Packages/sshpass-1.06-2.el7.x86_64.rpm
 sudo yum localinstall sshpass-1.06-2.el7.x86_64.rpm
+```
 -------
 
 sudo nano /etc/hosts
@@ -50,8 +51,8 @@ ansible all --list
 ansible nodes -m ping
 ansible all -m ping
 
-###########
-**Using source
+-------
+***Using source
 
 git clone https://github.com/ansible/ansible.git --branch=v2.16.4
 mv ansible ansible-2.16.4
