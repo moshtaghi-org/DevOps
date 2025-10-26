@@ -50,3 +50,27 @@ ansible all --list
 ansible nodes -m ping
 ansible all -m ping
 
+###########
+**Using source
+
+git clone https://github.com/ansible/ansible.git --branch=v2.16.4
+mv ansible ansible-2.16.4
+cd ansible-2.16.4
+python3 -m venv tools
+source tools/bin/activate
+pip install .
+deactivate
+
+'''
+nano /home/user/tools/active-ansible-2.16.4.sh
+```
+#!/bin/bash
+
+# مسیر پوشه‌ای که اسکریپت توش قرار داره
+#DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+DIR="/home/user/tools/ansible-2.16.4"
+
+python3 -m venv "$DIR/ansible-2.16.4"
+# فعال‌سازی محیط مجازی ansible
+source "$DIR/ansible-2.16.4/bin/activate"
+```
