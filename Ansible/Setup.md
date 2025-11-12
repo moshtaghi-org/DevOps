@@ -57,7 +57,7 @@ ansible all -m ping
 git clone https://github.com/ansible/ansible.git --branch=v2.16.4
 mv ansible ansible-2.16.4
 cd ansible-2.16.4
-python3 -m venv tools
+python3 -m venv ansible-2.16.4
 source tools/bin/activate
 pip install .
 deactivate
